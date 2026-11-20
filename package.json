@@ -1,0 +1,27 @@
+{
+  "name": "trustvote",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public polls where every vote is signed by the voter's wallet and anyone can recount.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev:server": "node --watch server/index.js",
+    "dev:web": "vite",
+    "build": "vite build",
+    "test": "node --test",
+    "verify": "node cli/verify.js"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "express": "^4.22.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}

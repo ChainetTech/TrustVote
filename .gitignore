@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# The live log and the server's signing key. Back these up; never commit them.
+data/
+.env
